@@ -16,7 +16,7 @@ export const HeaderContainer = styled.header`
 
   background: #fafafa;
 
-  div {
+  nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
