@@ -8,7 +8,9 @@ import { NavLink } from 'react-router-dom'
 export function Header() {
   return (
     <HeaderContainer>
-      <img src={coffee} alt="" />
+      <div>
+        <img src={coffee} alt="" />
+      </div>
       <nav>
         <img src={location} alt="" />
 

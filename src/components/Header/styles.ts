@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header`
   gap: 820px;
 
   position: absolute;
-  height: 104px;
+  //height: 104px;
   left: 0px;
   right: 0px;
   top: 0px;
@@ -49,6 +49,15 @@ export const HeaderContainer = styled.header`
 
     flex: none;
     order: 1;
+    flex-grow: 0;
+  }
+
+  div {
+    width: 84.95px;
+    height: 40px;
+
+    flex: none;
+    order: 0;
     flex-grow: 0;
   }
 `
