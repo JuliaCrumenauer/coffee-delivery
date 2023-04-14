@@ -1,38 +1,40 @@
 import { Clock, Coffee, Package, ShoppingCart } from 'phosphor-react'
-import coffeehome from '../../assets/coffee_home.svg'
+import coffeeHome from '../../../assets/coffee_home.svg'
 import {
-  BenefitsList,
-  BenefitsListText,
-  HomeContainer,
-  ImagemHome,
   Benefit1,
   Benefit2,
   Benefit3,
   Benefit4,
-  Text,
-  ShoppingCartIcon,
-  PackageIcon,
+  BenefitsList,
+  BenefitsListText,
   ClockIcon,
   CoffeeIcon,
-  Strong,
-  Paragraph,
-} from './styles'
+  HomeHeader,
+  ImgHomeHeader,
+  PackageIcon,
+  ShoppingCartIcon,
+  TextBigger,
+  TextHeaderHome,
+  TextSmaller,
+} from './styledHeaderHome'
 
-export function Home() {
+export function HeaderHome() {
   return (
     <div>
-      <HomeContainer>
-        <Text>
-          <Strong>
-            <strong>Encontre o café perfeito para qualquer hora do dia</strong>
-          </Strong>
-          <Paragraph>
-            <p>
-              Com o Coffee Delivery você recebe seu café onde estiver, a
-              qualquer hora.
-            </p>
-          </Paragraph>
-        </Text>
+      <HomeHeader>
+        <ImgHomeHeader>
+          <img src={coffeeHome} alt="" />
+        </ImgHomeHeader>
+
+        <TextHeaderHome>
+          <TextBigger>
+            Encontre o café perfeito para qualquer hora do dia
+          </TextBigger>
+          <TextSmaller>
+            Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
+            hora
+          </TextSmaller>
+        </TextHeaderHome>
         <BenefitsList>
           <BenefitsListText>
             <Benefit1>
@@ -61,10 +63,7 @@ export function Home() {
             </Benefit4>
           </BenefitsListText>
         </BenefitsList>
-        <ImagemHome>
-          <img src={coffeehome} alt="" />
-        </ImagemHome>
-      </HomeContainer>
+      </HomeHeader>
     </div>
   )
 }
