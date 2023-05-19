@@ -13,6 +13,7 @@ import {
 import { ItemHomeProps } from '../../../utils/Coffees'
 import { useState } from 'react'
 import { ShoppingCart } from 'phosphor-react'
+import { AddCart } from './AddCart'
 
 export function ItensHome({ item }: ItemHomeProps) {
   const [contador, setContador] = useState(1)
@@ -35,6 +36,13 @@ export function ItensHome({ item }: ItemHomeProps) {
       return anterior - 9
     })
   }
+  /* Sobre a função abaixo - Preciso mostrar esse valor em algum lugar, nesse momento não vai estar 
+  mostrando. É que tem que passar pra outro componente... O lugar onde eu quero mostrar tá no Header.
+  Vamos relembrar como faz isso então! Acho que fora isso vai ser bem fácil.
+  Tenho que fazer algum export aqui e algum import lá. Mas onde? Vamos pensar e qualquer coisa olhar
+  no código de outras pessoas. Eu acho que fiz isso no desafio 1. Algo similar ao que preciso fazer agora.
+  Acho que tem que fazer um export na function e um import lá no componente que quero.
+*/
 
   return (
     <div>
@@ -64,7 +72,7 @@ export function ItensHome({ item }: ItemHomeProps) {
               </ButtonQuantidadeDisplay>
 
               <ShoppingCartIcons>
-                <ShoppingCart></ShoppingCart>
+                <ShoppingCart type="button" onClick={AddCart} />
               </ShoppingCartIcons>
             </Buy>
           </CardCoffeItem>

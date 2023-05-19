@@ -1,7 +1,11 @@
+import { Complete } from './Components/Complete'
+import { SelectedCoffees } from './Components/SelectedCoffees'
+
 export function Checkout() {
   return (
     <div>
-      <h1>Checkout</h1>
+      <SelectedCoffees />
+      <Complete />
     </div>
   )
 }

@@ -6,6 +6,8 @@ import { HeaderContainer } from '../Header/styles'
 import { NavLink } from 'react-router-dom'
 
 export function Header() {
+  const cartSize = 0
+
   return (
     <HeaderContainer>
       <div>
@@ -15,9 +17,8 @@ export function Header() {
         <img src={location} alt="" />
 
         <NavLink to="/checkout" title="Check out">
-          <button>
-            <ShoppingCart size={24} />
-          </button>
+          <ShoppingCart size={24} />
+          <button>{cartSize}</button>
         </NavLink>
       </nav>
     </HeaderContainer>
